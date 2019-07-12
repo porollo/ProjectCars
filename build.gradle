@@ -34,6 +34,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.session:spring-session-core'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.session', name: 'spring-session-data-redis', version: '2.1.7.RELEASE'
+    compile group: 'redis.clients', name: 'jedis', version: '3.1.0-m4'
     compileOnly 'org.projectlombok:lombok'
     compile 'io.jsonwebtoken:jjwt-api:0.10.5'
     runtime 'io.jsonwebtoken:jjwt-impl:0.10.5',

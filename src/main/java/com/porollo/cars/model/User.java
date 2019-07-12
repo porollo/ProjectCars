@@ -19,7 +19,7 @@ public class User {
     private boolean enable;
     private String recordCreated;
 
-    public User(String email, String password, boolean enable, String recordCreated, UserDetails userDetails){}
+    public User(){}
 
     public User (String email, String password, boolean enable, String recordCreated) {
         this.email = email;
