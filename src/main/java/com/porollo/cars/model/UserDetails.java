@@ -18,15 +18,25 @@ public class UserDetails {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String username; // UD
-    private String name;//UD
-    private String surname;//UD
+    private String username;
+    private String name;
+    private String surname;
+    private String country;
+    private String region;
+    private String city;
+    private Integer postalCode;
+    private String cellPhone;
 
     private UserDetails(){}
 
-    public UserDetails (String username, String name, String surname) {
+    public UserDetails (String username, String name, String surname, String country, String region, String city, Integer postalCode, String cellPhone) {
         this.username = username;
         this.name =  name;
         this.surname = surname;
+        this.country = country;
+        this.region = region;
+        this.city = city;
+        this.postalCode = postalCode;
+        this.cellPhone = cellPhone;
     }
 }

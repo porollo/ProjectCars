@@ -22,7 +22,7 @@ public class DatabaseInitialData implements ApplicationRunner {
     }
 
     @Override
-    public void run(ApplicationArguments args) throws Exception {
+    public void run(ApplicationArguments args) {
         userRepository.deleteAll();
         userRepository.save(new User("d.porollo@gmail.com", "12345678", true, "12.07.2019"));
         carRepository.deleteAll();
